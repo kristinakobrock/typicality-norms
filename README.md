@@ -1,2 +1,0 @@
-# typicality-norms
- 
