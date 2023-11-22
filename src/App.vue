@@ -3,7 +3,7 @@
               :image-assets="pictures">
     <InstructionScreen :title="'Welcome'">
       Thank you for participating in our study. <br>
-      In this study, you will rate pictures of objects for how well they fit a label.
+      In this study, you will rate pictures of objects for how well they fit a <strong>label</strong>.
     </InstructionScreen>
 
     <template v-for="(trial, i) in trialData">
@@ -11,6 +11,7 @@
       <SliderScreen
         :initial="50"
         :min="1"
+        :progress="i / trialData.length"
         option-left="Very atypical"
         option-right="Very typical"
       >
@@ -21,6 +22,8 @@
       </SliderScreen>
     
     </template>
+
+    <PostTestScreen />
 
     <SubmitResultsScreen />
   </Experiment>
