@@ -31,7 +31,7 @@
 
 <script>
 import _ from 'lodash';
-import trialData from '../trials/trials.csv';
+import trialData from '../trials/trials2.csv';
 
 export default {
   name: 'App',
